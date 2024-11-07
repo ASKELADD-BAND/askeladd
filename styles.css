@@ -370,82 +370,476 @@ footer li + li {
 
 
 /* アクセス */
-/* 大画面 (デスクトップ) */
-@media (min-width: 850px) {
-  .hero {
-    height: 350px; /* デスクトップ画面での.heroの高さを350pxに設定 */
+/* large screen */
+
+@media (max-width: 850px) {
+  .container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    max-width: 800px;
   }
 
-  .hero p {
-    font-size: 20px;
-    pointer-events: none;
+  header form {
+    display: block;
   }
-
-  /* その他のスタイルは変更なし */
+  
+  /* .hero p{
+  font-size: 21px;
+  pointer-events: none; */
 }
 
-/* 中サイズ (タブレット、ポートレート) */
-@media (min-width: 600px) and (max-width: 849px) {
-  .hero {
-    height: 350px; /* 中サイズのデバイスでも350px */
-  }
 
-  .hero p {
+
+@media (min-width: 100px) {
+
+ 
+  .hero p{
     font-size: 17px;
     pointer-events: none;
   }
 
+
+  /* main  */
+  .features {
+    font-family:serif;
+    padding: 64px 0;
+    overflow: hidden;
+    background-color: #00111d;
+  }
+  
+  .features h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 64px;
+    color: aliceblue;
+  }
+  
+  .features .pic {
+    padding: 32px;
+  }
+  
+  .features img {
+    width: 100%;
+  }
+  
+  .features h2 {
+    padding-bottom: 16px;
+    color: #f2f2f2;
+  }
+  
+  .features section + section {
+    margin-top: 40px;
+  }
+  
+  .features p{
+    color: aliceblue;
+  }
+  
+  
+  .animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity .3s, transform .3s;
+  }
+  
+  .animate.appear {
+    opacity: 1;
+    transform: none;
+  }
+
+
+  /* カルーセル */
+  .swiper{
+    text-align: center;
+    width: 360px;
+    height: 240px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .swiper img{
+    
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-prev{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  .swiper-button-next{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 0 0 10px !important;
+    background: #333 !important;
+  }
+  
+  .swiper-pagination-bullet:first-child {
+    margin: 0 !important;
+  }
+
+
+    /* online */
+.online img{
+  text-align: center;
+  width: 300px;
+  height: 90px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10%;
+}
+
+
+/* footer */
+footer ul {
+  display: flex;
+  margin-right: 10px;
+}
+
+footer li i {
+  font-size: 40px;
+  
+}
+
+
+
+
+/* アクセス */
+
+acs h2{
+  margin-top:50px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family:serif;
+  text-align: center;
+}
+
+acs p{
+  font-size: 18px;
+}
+
+
+acs iframe{
+  width: 90%;
+  height: 450px;
+  display: block;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+acs .c ul{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 45px;
+}
+
+acs li{
+  margin-bottom: 150px;
+}
+
+acs li + li{
+  margin-left: 48px;
+}
+
+acs li i{
+    font-size: 34px;
+}  
+
+}
+@media (min-width: 200px) {
+  .hero p{
+    font-size: 12px;
+    pointer-events: none;
+  }
+
+  /* カルーセル */
+  .swiper{
+    text-align: center;
+    width: 200px;
+    height: 130px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .swiper img{
+    
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-prev{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  .swiper-button-next{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 0 0 10px !important;
+    background: #333 !important;
+  }
+  
+  .swiper-pagination-bullet:first-child {
+    margin: 0 !important;
+  }
+
+
+    /* online */
+.online img{
+  text-align: center;
+  width: 200px;
+  height: 90px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10%;
+}
+}
+@media (min-width: 300px) {
+  .hero p{
+    font-size: 17px;
+    pointer-events: none;
+  }
+  
+
+
+  /* カルーセル */
+  
+  
+  main .merch h1{
+    text-align: center;
+    font-family:serif;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 7px;
+  }
+
+  .swiper{
+    text-align: center;
+    width: 300px;
+    height: 180px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .swiper img{
+    
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-prev{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  .swiper-button-next{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 0 0 10px !important;
+    background: #333 !important;
+  }
+  
+  .swiper-pagination-bullet:first-child {
+    margin: 0 !important;
+  }
+
+
+    /* online */
+.online img{
+  text-align: center;
+  width: 280px;
+  height: 90px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10%;
+}
+}
+@media (min-width: 400px) {
+
+  .hero{
+    height: 350px;
+  }
+
+  .hero p{
+    font-size: 17px;
+    pointer-events: none;
+  }
+  
+  /* main  */
+  .features p{
+    font-size: 17px;
+    color: aliceblue;
+  }
+
+
+  /* カルーセル */
+
+  main .merch h1{
+    text-align: center;
+    font-family:serif;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 7px;
+  }
+
+  .swiper{
+    text-align: center;
+    width: 360px;
+    height: 210px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .swiper img{
+    
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-prev{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  .swiper-button-next{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 0 0 10px !important;
+    background: #333 !important;
+  }
+  
+  .swiper-pagination-bullet:first-child {
+    margin: 0 !important;
+  }
+
+
+    /* online */
+.online img{
+  text-align: center;
+  width: 300px;
+  height: 90px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10%;
+}
+}
+@media (min-width: 500px) {
+  .hero p{
+    font-size: 20px;
+    pointer-events: none;
+  }
+  /* カルーセル */
+  .swiper{
+    text-align: center;
+    width: 440px;
+    height: 240px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .swiper img{
+    
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-prev{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  .swiper-button-next{
+    color: rgb(100, 161, 189) !important;
+    
+    border-radius: 13%;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 0 0 10px !important;
+    background: #333 !important;
+  }
+  
+  .swiper-pagination-bullet:first-child {
+    margin: 0 !important;
+  }
+
+
+    /* online */
+.online img{
+  text-align: center;
+  width: 350px;
+  height: 90px;
+  display: block;
+  margin: auto;
+  padding-bottom: 10%;
+}
+}
+@media (min-width: 600px) {
+
+  /* main  */
+  .features {
+    font-family:serif;
+    padding: 64px 0;
+    overflow: hidden;
+    background-color: #00111d;
+  }
+  
   .features h1 {
     font-size: 43px;
     text-align: center;
     padding-bottom: 64px;
     color: aliceblue;
   }
-
-  /* カルーセルのスタイル */
-  .swiper {
-    text-align: center;
-    width: 440px;
-    height: 240px;
-    margin-bottom: 40px;
+  
+  .features .pic {
+    padding: 32px;
   }
-
-  /* その他のスタイル */
-  .online img {
-    text-align: center;
-    width: 350px;
-    height: 90px;
-    display: block;
-    margin: auto;
-    padding-bottom: 10%;
+  
+  .features img {
+    width: 100%;
   }
-}
-
-/* スマホ向け (小さい画面) */
-@media (max-width: 599px) {
-  .hero {
-    height: auto; /* 小さい画面では高さを自動調整 */
+  
+  .features h2 {
+    font-size: 32px;
+    padding-bottom: 16px;
+    color: #f2f2f2;
   }
-
-  .hero p {
-    font-size: 12px;
-    pointer-events: none;
-  }
-
-  /* カルーセルのスタイル */
-  .swiper {
-    text-align: center;
-    width: 200px;
-    height: 130px;
-    margin-bottom: 40px;
-  }
-
-  .online img {
-    text-align: center;
-    width: 200px;
-    height: 90px;
-    display: block;
-    margin: auto;
-    padding-bottom: 10%;
-  }
-}
