@@ -119,9 +119,8 @@ header h1 {
 }
 
 .hero img {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  max-width: 100%; /* デスクトップ画面サイズで画像を小さく設定 */
   object-fit: cover;
   position: absolute;
   opacity: 0;
@@ -170,6 +169,10 @@ main h1 {
   justify-content: center;
   align-items: center;
   color: #f2f2f2;
+}
+
+.icon i {
+  font-size: 24px; /* アイコンのサイズを24pxに設定 */
 }
 
 main ul {
@@ -251,11 +254,5 @@ footer li + li {
 @media (max-width: 700px) {
   .hero {
     height: 300px;
-  }
-}
-
-@media (min-width: 850px) {
-  .hero img {
-    max-width: 100%; /* さらに小さくする場合はこの数値を調整 */
   }
 }
