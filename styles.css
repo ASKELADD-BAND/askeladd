@@ -821,7 +821,7 @@ acs li i{
 @media (min-width: 400px) {
 
   .hero{
-    height: 650px;
+    height: 400px;
   }
 
   .hero p{
@@ -1072,7 +1072,7 @@ acs li i{
 }
 @media (min-width: 690px) {
   .hero{
-    height: 550px;
+    height: 650px;
   }
 
   .hero p{
@@ -1083,7 +1083,7 @@ acs li i{
 @media (min-width: 700px) {
   
   .hero{
-    height: 550px;
+    height: 650px;
   }
 
   .hero p{
@@ -1186,7 +1186,7 @@ acs li i{
 }
 @media (min-width: 800px) {
   .hero{
-    height: 550px;
+    height: 650px;
   }
 
   .hero p{
@@ -1223,7 +1223,7 @@ footer li i {
 }
 @media (min-width: 950px){
   .hero{
-    height: 550px;
+    height: 650px;
   }
 
   /* main  */
@@ -1327,7 +1327,7 @@ footer li i {
 }  
 @media (min-width: 1150px){
   .hero{
-    height: 550px;
+    height: 650px;
   }
 
   /* main  */
