@@ -229,7 +229,9 @@ footer li + li {
 /* Media Queries */
 @media (max-width: 700px) {
   .hero {
-    height: 300px;
+    max-width: 100%;
+  height: auto;
+  padding-bottom: 50px;
   }
 }
 
